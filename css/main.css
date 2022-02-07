@@ -75,7 +75,8 @@ body {
   background-image: url(../assets/bg-main-mobile.png);
   width: 100%;
   margin: 0 auto;
-  max-width: 1110px;
+  min-width: 375px;
+  max-width: 375px;
   font-family: "IBM Plex Sans", sans-serif;
 }
 
@@ -105,9 +106,15 @@ h3 span {
   margin: 0 auto;
 }
 
+header {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  width: 80%;
+}
+
 button {
   width: 100%;
-  margin: 1rem 0;
+  margin: .5rem 0;
   border-radius: 1rem;
   height: 61px;
   border: none;
@@ -186,12 +193,6 @@ strong {
   font-weight: bold;
 }
 
-header {
-  padding-top: 2rem;
-  padding-bottom: 4rem;
-  width: 80%;
-}
-
 footer {
   margin: 2rem auto;
   width: 80%;
@@ -228,9 +229,77 @@ footer p {
   margin: 0;
 }
 
-footer .start {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+@media screen and (min-width: 768px) {
+  html {
+    position: relative;
+  }
+  body {
+    max-width: 696px;
+  }
+  h1 {
+    font-size: 64px;
+  }
+  body::before {
+    content: '';
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 300px;
+    width: 30%;
+    height: 100%;
+    background-image: url(../assets/bg-pattern-1.svg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 100%;
+    background-position-x: 15px;
+    background-position-y: -35px;
+  }
+  main {
+    margin: 0 auto;
+  }
+  header {
+    width: 100%;
+  }
+  .illustration {
+    -webkit-transform: translate(-95%, -75%);
+            transform: translate(-95%, -75%);
+  }
+  .first {
+    max-width: 520px;
+    width: 100%;
+    margin: 0;
+  }
+  .space {
+    min-height: 696px;
+  }
+  .card {
+    position: absolute;
+    max-width: 400px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-30%, -20%);
+            transform: translate(-30%, -20%);
+  }
+  footer {
+    margin-top: 9rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+  footer p {
+    max-width: 366px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

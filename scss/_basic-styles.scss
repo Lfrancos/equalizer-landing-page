@@ -2,7 +2,8 @@ body {
     background-image: url(../assets/bg-main-mobile.png);
     width: 100%;
     margin: 0 auto;
-    max-width: 1110px;
+    min-width: 375px;
+    max-width: 375px;
     font-family: $font;
 }
 
@@ -28,10 +29,18 @@ h3 {
 .center {
     margin: 0 auto;
 }
+header {
+    // margin-top: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;;
+    width: 80%;
+
+}
+
 button {
 
     width: 100%;
-    margin: 1rem 0;
+    margin: .5rem 0;
     border-radius: 1rem;
     height: 61px;
     border: none;
@@ -91,4 +100,27 @@ section {
 }
 strong {
     font-weight: bold;
+}
+
+footer {
+    margin: 2rem auto;
+    width: 80%;
+    flex-direction: column;
+    justify-content: start;
+    align-content: flex-start;
+    align-items: flex-start;
+    ul {
+        margin-top: 3rem;
+        img {
+            width: 20px;
+        }
+    }
+    .flex {
+        gap: 1rem;
+        align-items: flex-start;
+    }
+    p {
+        margin: 0;
+    }
+
 }
