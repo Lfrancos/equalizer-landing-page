@@ -1,14 +1,12 @@
 @media screen and (min-width: 768px) {
-    html {
-        position: relative;
-    }
     body {
         max-width: 696px;
+        // position: relative;
     }
     h1 {
         font-size: 64px;
     }
-    body::before {
+    main::before {
         content: '';
         overflow: hidden;
         position: absolute;

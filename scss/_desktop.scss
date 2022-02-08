@@ -1,0 +1,39 @@
+@media screen and (min-width: 1124px) {
+    html {
+        margin: 0 auto;
+        max-width: 1440px;
+        position: relative;
+    }
+    body {
+        max-width: 1010px;
+
+    }
+    main::before {
+        background-position-x: 0px;
+    }
+    h1 {
+        font-size: 88px;
+    }
+    p {
+        font-size: 20px;
+    }
+    .first {
+        width: 100%;
+        max-width: 1010px;;
+    }
+    .space {
+        min-height: 600px;
+        margin-top: 17rem;
+    }
+    .illustration {
+        transform: translate(-130%, -75%);
+    }
+    .card {
+        transform: translate( 10%, -20%);
+    }
+    // .flex-start {
+    //     display: flex;
+    //     flex-direction: row;
+    //     justify-content: space-between;
+    // }
+}

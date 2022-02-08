@@ -1,5 +1,7 @@
 body {
     background-image: url(../assets/bg-main-mobile.png);
+    background-position-x: -20px;
+    background-position-y: -270px;;
     width: 100%;
     margin: 0 auto;
     min-width: 375px;
@@ -15,7 +17,7 @@ h1 {
 h2 {
     font-size: 32px;
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 h3 {
     font-size: 65px;
@@ -36,14 +38,45 @@ header {
     width: 80%;
 
 }
+.price {
+    margin: 3rem 0;
+}
 
 button {
-
     width: 100%;
     margin: .5rem 0;
     border-radius: 1rem;
     height: 61px;
     border: none;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    align-content: center;
+    p{
+        margin: 0;
+    }
+    img {
+        width: 7%;
+        // height: 100%;
+    }
+}
+.black {
+    background-color: $color-black;
+    color: $color-white;
+    margin-top: 1rem;
+}
+.white {
+    margin-top: 1rem;
+}
+.white:hover {
+    background-color: $color-light-orange;
+
+}
+button:hover {
+    cursor: pointer;
+    background-color: $color-cyan;
 }
 p {
     max-width: 825px ;
@@ -65,6 +98,10 @@ p {
     margin: 0 auto;
     width: 70%;
     max-width: 312px;
+    position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -120%);
 }
 section {
     background-color: $color-black;
@@ -74,15 +111,10 @@ section {
     border-radius: 1rem;
     margin: 0 auto;
     position: relative;
-    img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -120%);
-    }
-    .flex {
-        margin: 1rem 0;
-    }
+
+    // .flex {
+    //     margin: 1rem 0;
+    // }
 }
 .space {
     margin-top: 200px;
@@ -115,6 +147,7 @@ footer {
             width: 20px;
         }
     }
+
     .flex {
         gap: 1rem;
         align-items: flex-start;
@@ -123,4 +156,9 @@ footer {
         margin: 0;
     }
 
+}
+
+ul li img:hover {
+    cursor: pointer;
+    fill: $color-light-orange;
 }
