@@ -112,9 +112,6 @@ section {
     margin: 0 auto;
     position: relative;
 
-    // .flex {
-    //     margin: 1rem 0;
-    // }
 }
 .space {
     margin-top: 200px;
@@ -135,7 +132,7 @@ strong {
 }
 
 footer {
-    margin: 2rem auto;
+    margin: 2rem 0;
     width: 80%;
     flex-direction: column;
     justify-content: start;

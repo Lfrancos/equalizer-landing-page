@@ -1,4 +1,4 @@
-@media screen and (min-width: 1124px) {
+@media screen and (min-width: 1310px) {
     html {
         margin: 0 auto;
         max-width: 1440px;
@@ -36,4 +36,22 @@
     //     flex-direction: row;
     //     justify-content: space-between;
     // }
+    footer {
+        margin-top: 17rem;
+        margin-bottom: 7rem;
+        // row-gap: 50px;
+        .flex-start {
+            grid-area: down-left;
+            align-self: start;
+            img {
+                margin:0;
+            }
+        }
+    }
+    .paragraph {
+        grid-area: down-center;
+        p {
+            min-width: 366px;
+        }
+    }
 }

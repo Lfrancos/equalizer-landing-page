@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./assets/screenshot.jpg)
+![](./assets/screenshot.png)
 
 
 ### Links
@@ -55,6 +55,22 @@ Also I'm not sure if what I did was good or not but I started to use max-width m
 ### Continued development
 
 Want to make sure that the way I'm using "scss" is the most optimized way to do it. I know there are a lot of things that I'm not doing in the right way and the way that I'm using it is the most basic, I need to start adding a little bit mor complexity and seeing how it could help me make it better.
+
+```
+I have not been able to set up the footer to work as the design. At first I thought it was supposed to be a flex, now I'm thinking it needs to be a grid. But still not sure if that is the best idea.
+```
+
+```
+In any of the challenges up to this moment I have been able to edit the svg images, I know that I should be able to control the color from the css but I haven't figure out how to do that. - It ended up working, not perfectly but is working in a way.
+```
+```
+Also something that was mentioned by @grace-snow but that I haven't payed to much attention is the "aria" tags, they are for accessibility.
+I know how important that is but I want to spend a little bit more time feeling a more comfortable with the things that I'm learning so that I don't add to many things and start forgetting everything.
+I have to build upon good structures.
+```
+```
+Also something that I want to start doing but I haven't tried is to add gifs to the documentation. That can help make this "README" file more interesting.
+```
 
 ### Useful resources
 

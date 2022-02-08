@@ -233,7 +233,7 @@ strong {
 }
 
 footer {
-  margin: 2rem auto;
+  margin: 2rem 0;
   width: 80%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -325,13 +325,28 @@ ul li img:hover {
   footer {
     margin-top: 9rem;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+  }
+  footer p {
+    max-width: 366px;
+    font-size: 1rem;
+  }
+  footer .flex {
+    grid-row: 2;
+    grid-column: 3;
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: down-right;
+  }
+  .grid {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "up-left . ." "down-left down-center down-right";
+    -ms-grid-rows: auto auto;
+    -ms-grid-columns: 1fr minmax(466px auto) 1fr;
+        grid-template: auto auto/1fr minmax(466px auto) 1fr;
+    row-gap: 0;
+    -webkit-column-gap: 3rem;
+            column-gap: 3rem;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -339,12 +354,18 @@ ul li img:hover {
         -ms-flex-align: end;
             align-items: end;
   }
-  footer p {
-    max-width: 366px;
+  .paragraph {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 3;
+    grid-column: 3;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: down-left;
   }
 }
 
-@media screen and (min-width: 1124px) {
+@media screen and (min-width: 1310px) {
   html {
     margin: 0 auto;
     max-width: 1440px;
@@ -377,6 +398,25 @@ ul li img:hover {
   .card {
     -webkit-transform: translate(10%, -20%);
             transform: translate(10%, -20%);
+  }
+  footer {
+    margin-top: 17rem;
+    margin-bottom: 7rem;
+  }
+  footer .flex-start {
+    grid-area: down-left;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+  footer .flex-start img {
+    margin: 0;
+  }
+  .paragraph {
+    grid-area: down-center;
+  }
+  .paragraph p {
+    min-width: 366px;
   }
 }
 /*# sourceMappingURL=main.css.map */
